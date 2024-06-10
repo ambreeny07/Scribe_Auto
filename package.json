@@ -1,0 +1,39 @@
+{
+  "name": "cypress_cucumber_automation",
+  "version": "1.0.0",
+  "description": "Automation for makewithtech.com",
+  "main": "index.js",
+  "scripts": {
+    "report": "node cucumber-html-report.js",
+    "chrome-test": "npx cypress run --browser chrome",
+    "chrome-tests-run": "npm run chrome-test || npm run report"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Cypress_Cucumbers",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@deepakvishwakarma/cucumber-json-formatter": "^0.0.3",
+    "adm-zip": "^0.5.12",
+    "chokidar": "^3.6.0",
+    "cypress": "^12.8.1",
+    "cypress-esbuild-preprocessor": "^1.0.2",
+    "cypress-xpath": "^2.0.1",
+    "decompress": "^4.2.1",
+    "esbuild": "^0.17.11",
+    "jszip": "^3.10.1",
+    "multiple-cucumber-html-reporter": "^3.3.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.2",
+    "pdf-parse": "^1.1.1",
+    "pdf-text-reader": "^4.0.1",
+    "unzipper": "^0.11.4"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "mysql2": "^3.9.2"
+  }
+}
